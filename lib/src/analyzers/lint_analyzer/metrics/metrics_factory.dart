@@ -7,6 +7,7 @@ import 'metrics_list/maximum_nesting_level/maximum_nesting_level_metric.dart';
 import 'metrics_list/number_of_methods_metric.dart';
 import 'metrics_list/number_of_parameters_metric.dart';
 import 'metrics_list/source_lines_of_code/source_lines_of_code_metric.dart';
+import 'metrics_list/technical_debt/technical_debt_metric.dart';
 import 'metrics_list/weight_of_class_metric.dart';
 import 'models/metric.dart';
 
@@ -24,6 +25,7 @@ final _implementedMetrics = <String, Metric Function(Map<String, Object>)>{
       NumberOfParametersMetric(config: config),
   SourceLinesOfCodeMetric.metricId: (config) =>
       SourceLinesOfCodeMetric(config: config),
+  TechnicalDebtMetric.metricId: (config) => TechnicalDebtMetric(config: config),
   WeightOfClassMetric.metricId: (config) => WeightOfClassMetric(config: config),
   // Complex metrics:
   // Depend on CyclomaticComplexityMetric, HalsteadVolumeMetric and SourceLinesOfCodeMetric metrics
