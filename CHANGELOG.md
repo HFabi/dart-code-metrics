@@ -2,8 +2,8 @@
 
 ## Unreleased
 
-* feat: introduce file metrics
 * refactor: cleanup anti-patterns, metrics documentation
+* feat: add `technical-debt` metric.
 
 ## 4.6.0
 
