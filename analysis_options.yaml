@@ -21,6 +21,7 @@ dart_code_metrics:
     maximum-nesting: 5
     number-of-parameters: 5
     source-lines-of-code: 50
+    technical-debt: 1
   metrics-exclude:
     - test/src/analyzer_plugin/**
     - test/src/analyzers/**
